@@ -22,17 +22,17 @@ attribute "wordpress/version",
   :display_name => "Wordpress download version",
   :description => "Version of Wordpress to download from the Wordpress site.",
   :default => "3.0.4"
-  
+
 attribute "wordpress/checksum",
   :display_name => "Wordpress tarball checksum",
   :description => "Checksum of the tarball for the version specified.",
   :default => "7342627f4a3dca44886c5aca6834cc88671dbd3aa2760182d2fcb9a330807"
-  
+
 attribute "wordpress/dir",
   :display_name => "Wordpress installation directory",
   :description => "Location to place wordpress files.",
   :default => "/var/www"
-  
+
 attribute "wordpress/db/database",
   :display_name => "Wordpress MySQL database",
   :description => "Wordpress will use this MySQL database to store its data.",
@@ -67,8 +67,13 @@ attribute "wordpress/keys/nonce",
   :display_name => "Wordpress nonce key",
   :description => "Wordpress nonce key.",
   :default => "randomly generated"
-  
+
 attribute "wordpress/server_aliases",
   :display_name => "Wordpress Server Aliases",
   :description => "Wordpress Server Aliases",
   :default => "FQDN"
+
+attribute "wordpress/port",
+  :display_name => "Wordpress Port",
+  :description => "The port where Wordpress is expected to be running",
+  :default => "80"

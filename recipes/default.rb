@@ -123,4 +123,5 @@ web_app "wordpress" do
   docroot "#{node['wordpress']['dir']}"
   server_name server_fqdn
   server_aliases node['wordpress']['server_aliases']
+  port node['wordpress']['port']
 end
